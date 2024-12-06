@@ -17,7 +17,6 @@
 - **Payment (Optional)**: Users will be able to send donations to support the website.  
 
 
-Here’s a simplified and corrected version of the text, keeping your original tone and intent:  
 
 ---
 
