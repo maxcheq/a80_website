@@ -18,12 +18,12 @@ The main point of the site is to provide the opportunity for good design and inf
 
 ----------------------------------------
 
-What will be on the site:
+# Features  
+- **Wikipedia/Documentation**: Information about the Audi 80, including its history, technical specs, and equipment types. Users will also be able to compare different models and features.  
+- **Forum**: A section where users can discuss technical issues, share advice, and offer repair tips.  
+- **Gallery**: A collection of photos showcasing the Audi 80, including various modifications and tunings.  
+- **Repairs/Repair Parts**: A detailed guide to common car problems, with advice on where to find parts and how to fix issues.  
 
-1. Wikipedia / Documentation - 	Information about the Audi 80: history, technical specifications, and equipment types. Includes the ability to compare models, and features.
-2. Forum - A tab for discussing technical issues, sharing experiences, and providing advice on repairs and maintenance.
-3. Gallery - photos of the Audi 80. Includes images of various modifications and tunings.
-4. Repairs / Repairs Parts - A place where people will find lists of basic issues, what (where find it) and how to fix it.
 
 -----------------------------------------
 
