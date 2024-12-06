@@ -1,22 +1,3 @@
-My website about the car will be about a specific car, the Audi 80, for now, it will show technical specifications, photos of the car and its types of equipment. The site is needed so that users can learn about the problem areas of the car and be able to solve them in time. It is also possible that a forum will be added to discuss any technical problems of the car.
-
-The site will be intended for everyone, including both ordinary people and car enthusiasts. That is, to make the most convenient, understandable and informative structure and navigation.
-
-The site will have the ability to view the history of the car, types of equipment and a list of all possible versions. I would like the photo of the car to take up more space on the site than usual, so that users could examine the car in detail. There will also be a list of problems and their solutions. I would also like to add the ability to compare the benefits of a car by price, for example, a quattro car with minor problems for 2000 euros will be better than a regular Audi 80 but in good condition for the same money. I would like to make cards with spare parts so that you can easily divide the problems into groups. For example, interior, engine, chassis, controls, electronics.
-
-And news and articles about the car can also be added, and anyone can do it.
-
-Of course, you can choose a car by specific criteria, such as year, engine, drive, edition, market, etc.
-
-There will be 5 main tabs on the site, which ones are hard to say now, but it could be articles, repair, gallery, forum, and something else.
-
-The site will have many filter options and criteria for choosing a car model.
-
-The site will be written frontend in html, css, heat script, so far so good. Backend possibly php or go)
-
-The main point of the site is to provide the opportunity for good design and information for car users, whether for dummies or for experts. Style, convenience, practicality and information is what describes the site and will distinguish it from others.
-
-----------------------------------------
 
 # Features  
 - **Wikipedia/Documentation**: Information about the Audi 80, including its history, technical specs, and equipment types. Users will also be able to compare different models and features.  
@@ -25,17 +6,36 @@ The main point of the site is to provide the opportunity for good design and inf
 - **Repairs/Repair Parts**: A detailed guide to common car problems, with advice on where to find parts and how to fix issues.  
 
 
------------------------------------------
 
-Architecture of site:
 
-front-end - html, csc, javascript 
+# Website Architecture  
 
-back-end - golang
+- **Frontend**: HTML, CSS, JavaScript.  
+- **Backend**: Golang.  
+- **Authentication**: Will alow users to register and use the forum.  
+- **Database**: For forum user information.  
+- **Payment (Optional)**: Users will be able to send donations to support the website.  
 
-auth - register users for ability to use forum 
 
-database - the database of forum users
+Here’s a simplified and corrected version of the text, keeping your original tone and intent:  
 
-payment (optionally) - users can sent donations
+---
 
+My website is about the Audi 80. It will show technical specifications, photos, and details about the car’s equipment. The goal is to help users learn about problem areas and fix them in time. Later, I might add a forum for people to discuss technical issues.  
+
+
+The site is for everyone, both regular users and car fans. I want it to be easy to use, clear, and simple to explore.
+
+Users can explore the history of the Audi 80, learn about its features, and see the different versions. I want photos to be large so users can look at details carefully. The site will also list common problems and solutions.  
+
+There will be a feature to compare car models by price and benefits. For example, a quattro with minor issues for 2000 euros could be better than a standard Audi 80 in perfect condition for the same price. To keep things organized, problems will be grouped into categories like the interior, engine, chassis, or electronics.  
+
+The site will also have news and articles about the Audi 80, and anyone can contribute to this section. Users can search for cars by criteria such as year, engine, drive system, or market version.  
+
+The website will have five main sections, such as Articles, Repairs, Gallery, Forum, and maybe one more. It will also include filters to make searching easier.  
+
+The frontend will use HTML, CSS, and JavaScript. For the backend, I’ll use Golang or PHP.  
+
+The main purpose of the site is to provide a clean design and useful information for all kinds of users, whether they are beginners or experts. It will stand out by focusing on style, convenience, and practical details.  
+
+---
