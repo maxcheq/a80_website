@@ -44,95 +44,6 @@ ul {
   opacity: .02;
 }
 
-.gradient-bg {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  overflow: hidden;
-  inset: 0;
-}
-
-.gradients-container {
-  width: 100%;
-  height: 100%;
-  filter: blur(100px);
-  transform: translate3d(0, 0, 0);
-
-}
-
-.gradients-container > div {
-  border-radius: 50%;
-  opacity: .2;
-}
-
-.g1 {
-  mix-blend-mode: var(--blending);
-  background: radial-gradient(
-    circle at center,
-    rgba(var(--color1)) 0,
-    rgba(var(--color1)) 50%
-
-  ) no-repeat;
-  position: absolute;
-  width: var(--circle-size);
-  height: var(--circle-size);
-  top: calc(100% - var(--circle-size)/2);
-  left: calc(100% - var(--circle-size)/2);
-  transform-origin: center center;
-  animation: moveVertical 30s ease infinite;
-}
-
-.g2 {
-  mix-blend-mode: var(--blending);
-  background: radial-gradient(
-    circle at center,
-    rgba(var(--color2)) 0,
-    rgba(var(--color2)) 50%
-
-  ) no-repeat;
-  position: absolute;
-  width: var(--circle-size);
-  height: var(--circle-size);
-  top: calc(10% - var(--circle-size)/2);
-  left: calc(10% - var(--circle-size)/2);
-  transform-origin: calc(50% - 400px);
-  animation: moveInCircle 40s reverse infinite;
-
-}
-
-.g3 {
-  mix-blend-mode: var(--blending);
-  background: radial-gradient(
-    circle at center,
-    rgba(var(--color3)) 0,
-    rgba(var(--color3)) 50%
-
-  ) no-repeat;
-  position: absolute;
-  width: var(--circle-size);
-  height: var(--circle-size);
-  top: calc(50% - var(--circle-size)/2 + 200px);
-  left: calc(50% - var(--circle-size)/2 + 500px);
-  transform-origin: calc(50% + 400px);
-  animation: moveInCircle 40s linear infinite;
-}
-
-.interactive {
-  mix-blend-mode: var(--blending);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: center center;
-  background: radial-gradient(
-    circle at center,
-    rgba(var(--color4)) 0,
-    rgba(var(--color4)) 50%
-
-  ) no-repeat;
-}
 
 .header-top {
   position: fixed;
@@ -240,8 +151,7 @@ ul {
   z-index: 7;
   width: 815px;
   overflow-y: auto;
-  background: rgba(255, 255, 255, .1);
-  backdrop-filter: blur(30px);
+  background: rgb(54, 54, 54);
   transform-origin: right top;
   border-radius: 10px;
   pointer-events: auto;
@@ -382,10 +292,7 @@ ul {
   transition: var(--transition-menu);
 }
 
-.main-menu-background.active {
-  opacity: 1;
-  visibility: visible;
-}
+
 
 @media (max-width: 991.98px) {
   .top-line__center {
