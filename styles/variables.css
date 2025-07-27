@@ -1,0 +1,30 @@
+:root {
+  --dark: #0b0b0c; /* Почти чёрный, фон — идеально для авто-сайта */
+  
+  /* Акцентные цвета (на фары, блики, кнопки, градиенты) */
+  --color1: 255, 46, 46;   /* Красный для фар / прожекторов (#ff2e2e) */
+  --color2: 255, 255, 255; /* Белый для контраста и текста (#ffffff) */
+  --color3: 85, 85, 85;    /* Тёмно-серый вторичный текст / бордеры */
+  --color4: 200, 0, 0;     /* Тёмно-красный насыщенный (#c80000) */
+
+  /* Градиенты красного свечения / фона */
+  --color-gradient-1: #ff0000;
+  --color-gradient-2: #fd1616;
+  --color-gradient-3: #ff3939;
+  --color-gradient-4: #ff4343;
+  --color-gradient-5: #ff6565;
+  --color-gradient-6: #f78080;
+  --color-gradient-7: #ffb4b4; /* для блика/перехода */
+
+  --gradient-base: var(--color-gradient-1) 2%, var(--color-gradient-1) 18%, var(--color-gradient-1) 20%, var(--color-gradient-2) 35%, var(--color-gradient-3) 50%, var(--color-gradient-4) 70%, var(--color-gradient-5) 90%, var(--color-gradient-6) 98%;
+
+  --gradient-1: linear-gradient(270deg, var(--gradient-base));
+  --gradient-2: linear-gradient(0deg, var(--gradient-base));
+
+  --blending: hard-light;
+  --circle-size: 80%;
+
+  --transition: all .5s;
+  --transition-menu: 0.5s cubic-bezier(.8, 0, .1, 1);
+  --radius: 8px;
+}
