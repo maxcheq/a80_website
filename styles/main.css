@@ -151,7 +151,7 @@ ul {
   z-index: 7;
   width: 815px;
   overflow-y: auto;
-  background: rgb(54, 54, 54);
+  background: rgb(29, 29, 29);
   transform-origin: right top;
   border-radius: 10px;
   pointer-events: auto;
@@ -284,7 +284,7 @@ ul {
 .main-menu-background {
   position: fixed;
   inset: 0;
-  background-color: rgba(28, 28, 28, 0.85);
+  background-color: rgb(28, 28, 28);
   z-index: 5;
   pointer-events: auto;
   opacity: 0;
