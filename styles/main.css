@@ -7,10 +7,13 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: -.011em;
+  -webkit-tap-highlight-color: transparent;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html, body {
   height: auto;
+  scroll-behavior: smooth;
 }
 
 body {
