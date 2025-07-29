@@ -296,12 +296,17 @@ ul {
 .main-menu-background {
   position: fixed;
   inset: 0;
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(28, 28, 28, .85);
   z-index: 5;
   pointer-events: auto;
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-menu);
+}
+
+.main-menu-background.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 
