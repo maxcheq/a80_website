@@ -59,7 +59,7 @@ ul {
 
 .top-line {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 
 }
 
@@ -84,7 +84,7 @@ ul {
 .top-menu {
   background: rgba(255, 255, 255, .05);
   border-radius: var(--radius);
-  padding: 6px;
+  padding: 1px;
   backdrop-filter: blur(30px);
 }
 
@@ -149,7 +149,7 @@ ul {
   right: 10px;
   bottom: 10px;
   z-index: 7;
-  width: 815px;
+  width: 450px;
   overflow-y: auto;
   background: rgb(29, 29, 29);
   transform-origin: right top;
