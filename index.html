@@ -5,19 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home Page - Car site about Audi 80 | A-80 </title>
-  <link rel="stylesheet" href="styles/main.css">
+  <title>A-80 | Car site about Audi 80 </title>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <link rel="manifest" href="assets/icons/site.webmanifest">
-  <script src="scripts/app.js" defer></script>
+ 	<script src="vendor/gsap/gsap.min.js" defer></script>
+	<script src="vendor/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="vendor/gsap/ScrollSmoother.min.js" defer></script>
+
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/app.js" defer></script>
 
 </head>
 
 <body>
 
-<div class="pattern"></div>
+  <div class="pattern"></div>
 
   <header class="header-top">
     <div class="top-line">
@@ -56,7 +60,72 @@
       </div>
     </div>
   </header>
-  
+  <div class="wrapper">
+    <div class="content">
+
+
+      <section class="hero-section">
+        <img data-speed=".6" class="hero" src="assets/images/car.png" alt="Car">
+      </section>
+      <div class="container">
+        <div data-speed=".75" class="main-header">
+          <h1 class="main-title">legacy of history</h1>
+        </div>
+        <div class="but-cont">
+          <button class="button">
+            <div class="button-overlay"></div>
+            <span>Explore
+              <svg width="53" height="58" viewBox="0 0 53 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"
+                  stroke="currentColor" stroke-width="9"></path>
+              </svg></span>
+          </button>
+        </div>
+      </div>
+
+
+
+
+      <div class="home_img">
+        <div class="container">
+          <div class="gallery">
+            <div data-speed=".9"="gallery__left">
+
+              <img class="gallery__item" src="assets/images/1.jpg" alt="car">
+              <img class="gallery__item" src="assets/images/2.jpg" alt="car">
+              <div class="text-block gallery__item">
+                <h2 class="text-block__h">A bestseller is celebrating its anniversary</h2>
+                <p class="text-block__p">With the first Audi 80, known internally as the “B1”, the Ingolstadt-based
+                  company
+                  hits the bull’s eye in 1972. It is intended to be “modern, but not trendy,” a reliable family car.</p>
+              </div>
+
+            </div>
+            <div data-speed="1.1" class="gallery__right">
+              <div class="text-block gallery__item">
+                <h2 class="text-block__h"> Audi captures the zeitgeist with this car: first Audi 80 unveiled 50 years
+                  ago
+                </h2>
+                <p class="text-block__p">It establishes the B series, is both a pioneer of innovative technology and a
+                  trendsetter, and becomes the first million-seller for the brand with the four rings: the Audi 80. The
+                  significance of the compact sedan for Audi and the Volkswagen Group is indisputable – not least
+                  because
+                  the Audi 80 pioneers the modular design.</p>
+              </div>
+
+              <img class="gallery__item" src="assets/images/3.jpg" alt="car">
+              <img class="gallery__item" src="assets/images/4.jpg" alt="car">
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
