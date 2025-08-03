@@ -9,7 +9,8 @@ if (ScrollTrigger.isTouch !== 1) {
 		wrapper: '.wrapper',
 		content: '.content',
 		smooth: 1.5,
-		effects: true
+		effects: true,
+		
 	})
 
 	gsap.fromTo('.hero-section', { opacity: 1 }, {
@@ -51,3 +52,4 @@ if (ScrollTrigger.isTouch !== 1) {
 	})
 
 }
+

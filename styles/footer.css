@@ -1,4 +1,4 @@
-.footer {
+footer {
   position: relative;
   width: 100%;
   height: auto;
@@ -6,8 +6,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 100px;
-  z-index: 100;
+  z-index: 50;
+  
+  
 }
 
 .footer__container {
@@ -39,7 +40,7 @@
   background-color: var(--color-gradient-3); 
 }
 
-.footer p {
+footer p {
   color: var(--color-text);
   line-height: 1.75;
 }
@@ -136,11 +137,14 @@
   padding: 50px 100px ;
   text-align: center;
   color: var(--color-text);
-
+  z-index: 1000;
+  transform: none !important;
 }
 
+
+
 @media (max-width: 991px) {
-  .footer {
+  footer {
     padding: 40px;
   }
   .footer__container {
@@ -154,6 +158,10 @@
     width: 100%;
   }
   .copyrightText {
-    padding: 8px 40px;
+    padding: 2px 40px;
   }
+  .social-icons {
+    margin-bottom: 10px;
+  }
+ 
 }
