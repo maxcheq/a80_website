@@ -1,6 +1,7 @@
 @import url(./fonts.css);
 @import url(./animations.css);
 @import url(./variables.css);
+@import url(./footer.css);
 
 * {
   margin: 0;
@@ -40,6 +41,20 @@ ul {
   margin: 0;
 }
 
+.aurora-background {
+position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      rgba(255, 80, 80, 0.25),
+      transparent 70%
+    ),
+    var(--dark);
+  pointer-events: none;
+}
+
+
 .pattern {
   content: '';
   position: fixed;
@@ -48,6 +63,7 @@ ul {
   pointer-events: none;
   background: url(../assets/images/noise.png);
   opacity: .02;
+  /* mix-blend-mode: overlay; */
 }
 
 
@@ -463,6 +479,8 @@ ul {
 .gallery__right > .text-block.gallery__item {
   padding-left: 5vw;
 }
+
+
 
 .main-menu-background {
   position: fixed;
