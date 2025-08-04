@@ -72,7 +72,18 @@
       <div class="content">
         <!-------------------------------------- Hero ---------------------------------------------------->
         <section class="hero-section">
-          <img data-speed=".6" class="hero" src="assets/images/car.png" alt="Car">
+          <picture>
+            
+            <source media="(max-width: 600px)" srcset="assets/images/car-small.png">
+
+            <source media="(min-width: 601px) and (max-width: 1399px)" srcset="assets/images/car-medium.png">
+
+            <source media="(min-width: 1400px)" srcset="assets/images/car.png">
+
+           
+            <img data-speed=".6" class="hero" src="assets/images/car.png" alt="Car">
+          </picture>
+
         </section>
         <div class="container">
           <div data-speed=".75" class="main-header">
