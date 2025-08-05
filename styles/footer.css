@@ -56,8 +56,8 @@ footer p {
 
 .social-icons li a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: #222;
   border-radius: var(--radius);
   display: flex;
@@ -132,6 +132,10 @@ footer p {
   transition: var(--transition);
 }
 
+.lucide-mail{
+  margin-right: 10px;
+}
+
 .copyrightText {
   width: 100%;
   padding: 50px 100px ;
@@ -143,7 +147,7 @@ footer p {
 
 
 
-@media (max-width: 991px) {
+@media (max-width: 660.98px) {
   footer {
     padding: 40px;
   }
@@ -158,10 +162,43 @@ footer p {
     width: 100%;
   }
   .copyrightText {
-    padding: 2px 40px;
+    margin-left: 35vw;
+    margin-bottom: 5vh;
+    font-size: 6vw;
   }
   .social-icons {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    
   }
- 
+  .social-icons li a {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer p {
+  color: var(--color-text);
+  line-height: 1.5;
+  font-size: 7vw;
+}
+
+footer a {
+  color: var(--color-text);
+  line-height: 1.5;
+  font-size: 7vw;
+}
+ footer h2 {
+  color: var(--color-text);
+  line-height: 1.5;
+  font-size: 9vw;
+  margin-top: 15vw;
+}
+.info li p a{
+  font-size: 7vw;
+}
+
+.lucide-mail{
+  width: 10vw;
+  height: 10vw;
+  margin-right: 3vw;
+  margin-top: 0.5vw;
+}
 }
