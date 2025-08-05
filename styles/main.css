@@ -612,4 +612,11 @@ position: fixed;
   .text-block {
     width: 400vw;
   }
+   .but-cont {
+    padding-left: 4vw;
+   }
+   .main-title {
+    padding-left: 4vw;
+    padding-top: 10vw;
+   }
 }
