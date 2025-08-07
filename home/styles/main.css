@@ -1,0 +1,253 @@
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/fonts.css');
+
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+@import url('./components/button.css');
+
+@import url('./effects/animations.css');
+
+body {
+  background-color: var(--dark);
+  color: #ffffff ;
+  font-family: montserrat-s, sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+
+
+
+.aurora-background {
+position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      rgba(255, 80, 80, 0.25),
+      transparent 70%
+    ),
+    var(--dark);
+  pointer-events: none;
+}
+
+
+.pattern {
+  content: '';
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  pointer-events: none;
+  background: url(../../assets/images/noise.png);
+  opacity: .02;
+  /* mix-blend-mode: overlay; */
+}
+
+
+
+
+.hero {
+  width: calc(var(--index)*40);
+  position: absolute;
+  left: 40vw;
+  top: 18vh;
+}
+
+.main-header {
+  height: 5vh;
+}
+
+.container {
+  padding-top: 10vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+.main-title {
+  font-size: calc(var(--index)*6);
+  position: absolute;
+  width: min-content;
+  top: 3vh;
+  line-height: 1;
+}
+
+.subtitile {
+  position: absolute;
+  top: 73vh;
+  width: calc(var(--index)*30);
+  font-size: calc(var(--index)*1.5);
+  line-height: 1;
+}
+
+
+.gallery {
+  display: flex;
+
+}
+.gallery > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery__item {
+  max-width: calc(var(--index)*30);
+  margin-bottom: var(--gallery-gap);
+  max-height: 100vh;
+  border-radius: 8px;
+  position: relative;
+}
+
+.gallery__left {
+  margin-top: calc(var(--gallery-gap));
+}
+
+.gallery_right > .gallery__item {
+  margin-top: var(--gallery-gap);
+
+}
+
+.text-block {
+  color: var(--color-text);
+  position: relative;
+}
+
+.text-block__h {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-header);
+  margin-bottom: 1.5rem; 
+}
+
+.text-block__p {
+  line-height: 1.75;
+}
+
+.gallery__right > .text-block.gallery__item {
+  padding-left: 5vw;
+  padding-right: 4vw;;
+}
+
+
+
+
+
+@media (max-width: 991.98px) {
+   .gallery {
+  flex-direction: column;
+} 
+
+  .top-line__center {
+    display: none;
+  }
+  .top-line {
+    justify-content: space-between;
+  }
+  .main-menu {
+    width: 95%;
+  }
+  .menu-button__menu {
+    width: 60px;
+    height: 60px;
+    gap: 10px;
+  }
+  .logo {
+    max-width: 80%;
+  }
+  .hero_section {
+    margin-top: 400px;
+  }
+  .gallery__item {
+    min-width: calc(var(--index)*52.5);
+    max-height: none;
+    margin-right: 5vw;
+  }
+  .text-block.gallery__item {
+  padding: 5vw;
+}
+  
+  .main-menu__inner li a {
+     line-height: 240%;
+     
+  }
+  .but-cont {
+    padding-top: 33vh;
+    padding-bottom: 5vh;
+  }
+  .button {
+    font-size: 25px;
+  }
+  .menu-button__menu span {
+    width: 35px;
+    height: 4px;
+  }
+  .menu-button__menu.active span:first-child {
+  transform: translateY(4.5px) rotate(45deg);
+  }
+.menu-button__menu.active span:last-child {
+  transform: translateY(-9.5px) rotate(-45deg);
+  }
+  .text-block__h {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+  }
+  .text-block__p {
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+    word-break: break-word;
+  }
+  
+   .gallery__right {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .gallery__left {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+
+ 
+}
+
+@media (max-width: 660.98px) {
+  .gallery__item {
+    max-width: calc(var(--index)*40);
+    max-height: 500vh; 
+    padding-left: 4vw;
+    padding-right: 10vw;
+  }
+   .gallery {
+    flex-direction: column;
+  }
+   .gallery__right {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .gallery__left {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+  .text-block {
+    width: 400vw;
+  }
+   .but-cont {
+    padding-left: 4vw;
+    padding-top: 45vw;
+   }
+   .main-title {
+    padding-left: 4vw;
+    padding-top: 2vw;
+   }
+   .subtitile {
+    padding-left: 4vw;
+    top: 105vw;
+   }
+}
