@@ -158,9 +158,7 @@ position: fixed;
     height: 60px;
     gap: 10px;
   }
-  .logo {
-    max-width: 80%;
-  }
+ 
   .hero_section {
     margin-top: 400px;
   }
