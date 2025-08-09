@@ -58,6 +58,17 @@ position: fixed;
   position: absolute;
   left: 40vw;
   top: 18vh;
+   opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.75s; 
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .main-header {
@@ -80,6 +91,18 @@ position: fixed;
     background: -webkit-linear-gradient(270deg, #fffff9 0%, #c0bfd0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+    opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.4s; 
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 }
 
 .subtitile {
@@ -89,6 +112,7 @@ position: fixed;
   font-size: calc(var(--index)*1.5);
   line-height: 1;
   color: var(--color-text);
+  
 }
 
 
