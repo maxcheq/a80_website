@@ -74,7 +74,12 @@ position: fixed;
   position: absolute;
   width: min-content;
   top: 3vh;
+  padding-bottom: 0.5em;
   line-height: 1;
+  padding-right: 10px;
+    background: -webkit-linear-gradient(270deg, #fffff9 0%, #c0bfd0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .subtitile {
@@ -83,6 +88,7 @@ position: fixed;
   width: calc(var(--index)*30);
   font-size: calc(var(--index)*1.5);
   line-height: 1;
+  color: var(--color-text);
 }
 
 
