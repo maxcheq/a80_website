@@ -4,6 +4,11 @@
   font-weight: 400;
 }
 @font-face {
+  font-family: 'HelveticaNowText-Bold';
+  src: url('../../../assets/fonts/HelveticaNowText-Bold.woff2');
+  font-weight: 400;
+}
+@font-face {
   font-family: 'montserrat-s';
   src: url('../../../assets/fonts/Montserrat-Light.woff2');
   font-weight: 300;
