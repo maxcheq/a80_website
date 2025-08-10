@@ -110,8 +110,7 @@
 
 @media (max-width: 660.98px) {
    .button {
-    
-    width: 145vw;           /* ширина кнопки на мобилке */
+    width: 140vw;           /* ширина кнопки на мобилке */
     margin: 55vh 10% 10vh; /* отступ сверху/снизу + по центру по горизонтали */
     display: block; 
     background:  radial-gradient(circle 80px at 80% -10%, #ff8888, #bf1414);
@@ -129,5 +128,13 @@
    .inner {
     color: radial-gradient(circle 100px at 80% -50%, #777777, #110f0f);
    }
-
+   .inner::before {
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .but_const {
+    padding-left: 50%;
+    padding-right: 50%;
+   }
 }

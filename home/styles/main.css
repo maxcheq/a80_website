@@ -24,8 +24,16 @@ body {
 }
 
 
-
-.aurora-background {
+.background  {
+  background-image: url("../../assets/images/bg_pc.png");
+  background-repeat: no-repeat;
+   position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center center;
+}
+/* .aurora-background {
 position: fixed;
   inset: 0;
   z-index: -1;
@@ -36,8 +44,14 @@ position: fixed;
     ),
     var(--dark);
   pointer-events: none;
-}
+} */
 
+/* .background {
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  inset: 0;
+} */
 
 .pattern {
   content: '';
@@ -47,7 +61,6 @@ position: fixed;
   pointer-events: none;
   background: url(../../assets/images/noise.png);
   opacity: .02;
-  /* mix-blend-mode: overlay; */
 }
 
 
@@ -282,5 +295,8 @@ position: fixed;
    .hero {
     top: 60vw;
    }
-  
+   
+   .background  {
+    background-image: url("../../assets/images/bg_mobile.png");
+   }
 }
