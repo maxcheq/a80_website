@@ -122,9 +122,9 @@ footer p {
 }
 
 .section__contacts .info li span:nth-child(1) {
-  color: #fff;
   font-size: 20px;
   margin-right: 10px;
+  transition: var(--transition);
 }
 
 .section__contacts .info li span {
@@ -142,17 +142,23 @@ footer p {
   transition: var(--transition);
 }
 
+.section__contacts .info li span:nth-child(1):hover {
+  color: #fff;
+  transition: var(--transition);
+}
+
 .lucide-mail{
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .copyrightText {
   width: 100%;
-  padding: 50px 100px ;
+  background: var(--dark);
+  padding: 8px 100px ;
   text-align: center;
   color: var(--color-text);
   z-index: 1000;
-  transform: none !important;
+  
 }
 
 
@@ -172,9 +178,11 @@ footer p {
     width: 100%;
   }
   .copyrightText {
-    margin-left: 35vw;
-    margin-bottom: 4px;
-    font-size: 6vw;
+  flex-direction: row;
+  width: 180%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+   
   }
   .social-icons {
     margin-bottom: 15px;
