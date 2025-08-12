@@ -4,6 +4,7 @@
 
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
+@import url('./layout/contact.css');
 
 @import url('./components/button.css');
 
@@ -193,6 +194,7 @@ position: fixed;
   }
   .main-menu {
     width: 95%;
+    height: 1200px;
   }
   .menu-button__menu {
     width: 60px;
