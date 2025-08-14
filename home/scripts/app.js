@@ -33,17 +33,22 @@ if (contactButton) {
   const contactButtonCancel = document.querySelector('.button_cancel')
   const contactBackground = document.querySelector('.contact__background')
   const contactContainer = document.querySelector('.contact__container')
+  const topMenu = document.querySelector('.top-menu')
 
   
   contactButton.addEventListener('click', () => {
     contactBackground.classList.add('active')
     contactContainer.classList.add('active')
+    topMenu.style.visibility = 'hidden' 
+    topMenu.style.opacity = '0'
   })
 
  
   contactButtonCancel.addEventListener('click', () => {
     contactBackground.classList.remove('active')
     contactContainer.classList.remove('active')
+    topMenu.style.visibility = 'visible' 
+    topMenu.style.opacity = '1'
   })
 
 
@@ -51,6 +56,8 @@ if (contactButton) {
     if (e.target === contactBackground) {
       contactBackground.classList.remove('active')
       contactContainer.classList.remove('active')
+      topMenu.style.visibility = 'visible' 
+      topMenu.style.opacity = '1'
     }
   })
 }

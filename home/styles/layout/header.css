@@ -43,6 +43,9 @@
   border-radius: var(--radius);
   padding: 1px;
   backdrop-filter: blur(30px);
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .top-menu ul {

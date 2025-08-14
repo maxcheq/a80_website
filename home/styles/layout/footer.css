@@ -6,7 +6,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  z-index: 50;
+  z-index: 4;
   transition: var(--transition);
   
   
