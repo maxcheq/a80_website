@@ -12,6 +12,7 @@
 
 body {
   background-color: var(--dark);
+  transition: background-color 1s ease-in-out;
   color: #ffffff ;
   font-family: montserrat-s, sans-serif;
   min-width: 320px;
@@ -25,15 +26,27 @@ body {
 }
 
 
-.background  {
-  background-image: url("../../assets/images/bg_pc.png");
-  background-repeat: no-repeat;
-  
+.background {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-size: cover;
-  background-position: center center;
+  background: var(--dark);
+  overflow: hidden;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../../assets/images/bg_pc.png") no-repeat center center / cover;
+  opacity: 0;
+  animation: fadeInBg 2s ease-in-out forwards;
+}
+
+@keyframes fadeInBg {
+  to {
+    opacity: 1;
+  }
 }
 /* .aurora-background {
 position: fixed;
