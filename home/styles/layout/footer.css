@@ -8,7 +8,7 @@ footer {
   flex-wrap: wrap;
   z-index: 4;
   transition: var(--transition);
-  
+  background: var(--dark);
   
 }
 
@@ -17,7 +17,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   transition: var(--transition);
-
+  
 }
 
 
@@ -151,6 +151,8 @@ footer p {
   margin-right: 5px;
 }
 
+
+
 .copyrightText {
   width: 100%;
   background: var(--dark);
@@ -159,6 +161,18 @@ footer p {
   color: var(--color-text);
   z-index: 1000;
   
+}
+
+
+.copyrightText::before {
+   content: '';
+  position: absolute;
+  bottom: 33px;
+  left: 38.5%;
+  width: 350px;
+  height: 1px;
+  background-color: rgba(89, 89, 89, 0.404); 
+  transition: var(--transition);
 }
 
 /* From Uiverse.io by iZOXVL */ 
@@ -182,7 +196,7 @@ footer p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 300%;
   height: 100%;
   background: radial-gradient(
     circle,
@@ -224,6 +238,10 @@ footer p {
   padding-top: 30px;
    
   }
+  .copyrightText::before {
+    display: hidden;
+    opacity: 0;
+  }
   .social-icons {
     margin-bottom: 15px;
     
@@ -259,5 +277,8 @@ footer a {
   height: 10vw;
   margin-right: 3vw;
   margin-top: 0.5vw;
+}
+.contact-button {
+   width: 500px;
 }
 }

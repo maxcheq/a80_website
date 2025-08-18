@@ -27,18 +27,23 @@ body {
 
 
 .background {
-  position: fixed;
+  position: fixed; /* changed from absolute to fixed */
   inset: 0;
   z-index: -1;
   background: var(--dark);
   overflow: hidden;
+  width: 100vw; /* added */
+  height: 100vh; /* added */
 }
 
 .background::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../../assets/images/bg_pc.png") no-repeat center center / cover;
+  background: url("../../assets/images/bg_pc.png") no-repeat center center;
+  background-size: cover; /* changed from center center / cover */
+  width: 100vw; /* added */
+  height: 100vh; /* added */
   opacity: 0;
   animation: fadeInBg 2s ease-in-out forwards;
 }
@@ -580,8 +585,24 @@ position: fixed;
    }
    
    .background  {
-    background-image: url("../../assets/images/bg_mobile.png");
+    background: var(--dark);
+    position: fixed;
+   min-width: calc(var(--index) * 56);
+
+    
+    inset: 0;
    }
+   .background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../../assets/images/bg_mobile.png") no-repeat center center;
+  background-size: cover; /* changed from center center / cover */
+  min-width: calc(var(--index) * 56);
+  
+  opacity: 0;
+  animation: fadeInBg 2s ease-in-out forwards;
+}
 }
 
 @media (max-width: 575.98px) {

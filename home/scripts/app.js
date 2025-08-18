@@ -27,6 +27,22 @@ menuBackground.addEventListener('click', (e) => {
   })
 }
 
+const bgLayers = document.querySelectorAll('.bg-layer');
+const triggers = document.querySelectorAll('.trigger');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const index = entry.target.dataset.bg;
+
+      bgLayers.forEach((layer, i) => {
+        layer.classList.toggle('active', i == index);
+      });
+    }
+  });
+}, { threshold: 0.5 }); // секция видна на 50%
+
+triggers.forEach(trigger => observer.observe(trigger));
 
 const contactButton = document.querySelector('.contact-button')
 if (contactButton) {
